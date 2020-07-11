@@ -25,11 +25,12 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [{ src: '@/assets/js/app.js', body: true }],
   },
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/app.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
