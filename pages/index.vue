@@ -1,18 +1,27 @@
 <template>
   <div>
-    <Header />
-    <LeftBar />
+    <IntroSection />
+    <AboutSection />
+    <SkillSection />
+    <ProjectSection />
+    <ContactSection />
   </div>
 </template>
 
 <script>
-import { Header } from '@/components/Header'
-import { LeftBar } from '@/components/LeftBar'
+import IntroSection from '@/components/IntroSection'
+import AboutSection from '@/components/AboutSection'
+import SkillSection from '@/components/SkillSection'
+import ProjectSection from '@/components/ProjectSection'
+import ContactSection from '@/components/ContactSection'
 
 export default {
   components: {
-    Header,
-    LeftBar,
+    IntroSection,
+    AboutSection,
+    SkillSection,
+    ProjectSection,
+    ContactSection,
   },
 }
 </script>

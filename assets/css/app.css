@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cutive+Mono&family=Fredericka+the+Great&family=Lato:wght@400;700;900&family=Paytone+One&family=Poppins:wght@600;700;800&display=swap");
-.transparent-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {
+.transparent-btn, .contact-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {
   background: transparent;
   color: #E3AE52;
   padding: 20px 38px;
@@ -7,6 +7,8 @@
   border: 1px solid #E3AE52;
   font-family: "Cutive Mono";
   font-weight: 600;
+  text-decoration: none;
+  text-align: center;
 }
 
 .section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
@@ -24,6 +26,11 @@
 @media only screen and (max-width: 600px) {
   .section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
     font-size: 1.8rem;
+  }
+
+  .transparent-btn, .contact-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {
+    font-size: 1rem;
+    padding: 15px 25px;
   }
 }
 body {
@@ -55,7 +62,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
   section {
-    max-width: 80%;
+    max-width: 75%;
   }
 }
 @media only screen and (min-width: 820px) {
@@ -70,7 +77,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
   section {
-    max-width: 1000px;
+    max-width: 70%;
   }
 }
 header.top-navigation {
@@ -100,8 +107,8 @@ div.content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  padding-top: 50px;
+  align-items: flex-start;
+  padding-top: 30px;
 }
 .intro-section h1 {
   font-family: "Paytone One";
@@ -115,11 +122,14 @@ div.content-wrapper {
   font-size: 38px;
   margin: 0;
 }
+.intro-section h2 {
+  margin: 5px 0 10px;
+}
 .intro-section h3 {
   margin: 15px 0 35px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .intro-section {
     align-items: center;
     text-align: center;
@@ -127,7 +137,7 @@ div.content-wrapper {
 }
 @media only screen and (max-width: 549px) {
   .intro-section h1 {
-    font-size: 37px;
+    font-size: 39px;
   }
   .intro-section h2, .intro-section h3 {
     font-size: 20px;
@@ -135,18 +145,18 @@ div.content-wrapper {
 }
 @media only screen and (min-width: 550px) {
   .intro-section h1 {
-    font-size: 39px;
+    font-size: 48px;
   }
   .intro-section h2, .intro-section h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 768px) {
   .intro-section h1 {
-    font-size: 45px;
+    font-size: 50px;
   }
   .intro-section h2, .intro-section h3 {
-    font-size: 23px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 820px) {
@@ -167,7 +177,10 @@ div.content-wrapper {
 }
 @media only screen and (min-width: 1200px) {
   .intro-section h1 {
-    font-size: 75px;
+    font-size: 80px;
+  }
+  .intro-section h2, .intro-section h3 {
+    font-size: 40px;
   }
 }
 .about-section {
@@ -199,6 +212,7 @@ div.content-wrapper {
   align-items: flex-start;
   width: 100%;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 .skill-section .skill-categories-wrapper .skill-category {
   display: flex;
@@ -244,8 +258,8 @@ div.content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px auto;
+  padding-top: 60px;
 }
 .project-section .project-grid {
   display: grid;
@@ -257,7 +271,7 @@ div.content-wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   background-color: #011C2B;
 }
 .project-section .project-grid .project-card .project-card-content {
@@ -360,7 +374,7 @@ div.content-wrapper {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 25px;
+  padding-right: 35px;
   padding-top: 5px;
   align-items: center;
 }
@@ -400,7 +414,7 @@ div.content-wrapper {
   align-items: center;
 }
 .footer .footer-content-wrapper h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #E3AE52;
 }
 .footer .footer-content-wrapper ul {
@@ -418,7 +432,7 @@ div.content-wrapper {
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .footer .footer-content-wrapper h3 {
     font-size: 1rem;
   }
@@ -428,7 +442,7 @@ div.content-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .navbar ul {
   display: flex;
@@ -437,7 +451,7 @@ div.content-wrapper {
   list-style: none;
   text-decoration: none;
 }
-.navbar ul li {
+.navbar ul li:not(:first-of-type) {
   margin-left: 20px;
 }
 .navbar ul li a {
@@ -476,22 +490,24 @@ div.dropdown-menu a:click {
     display: block;
   }
 }
-.contact-btn {
-  background: transparent;
-  color: #E3AE52;
-  padding: 20px 38px;
-  font-size: 1.2rem;
-  border: 1px solid #E3AE52;
-  font-family: "Cutive Mono";
-  font-weight: 600;
-}
-.contact-btn:active {
-  border: 1px solid #E3AE52;
-}
+@media screen and (min-width: 1200px) {
+  div.brand a {
+    font-size: 2rem;
+  }
 
-@media only screen and (max-width: 600px) {
+  .navbar ul li a {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 800px) {
   .contact-btn {
-    padding: 18px 30px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-btn {
+    margin-top: 15px;
+    font-size: 1.5rem;
   }
 }
 .left-bar {
@@ -508,7 +524,7 @@ div.dropdown-menu a:click {
   list-style: none;
 }
 .left-bar ul li:not(:first-of-type) {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .left-bar ul li:not(:first-of-type) a {
   text-decoration: none;
@@ -541,6 +557,11 @@ div.dropdown-menu a:click {
 @media only screen and (max-width: 600px) {
   .right-bar {
     display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .right-bar a {
+    font-size: 1.3rem;
   }
 }
 

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 let prevScrollpos = window.pageYOffset
 
 window.onscroll = function () {
