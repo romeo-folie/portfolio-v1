@@ -51,7 +51,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/apollo'],
+
+  apollo: {
+    clientConfigs: {
+      default: '@/plugins/apollo-config.js'
+    }
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

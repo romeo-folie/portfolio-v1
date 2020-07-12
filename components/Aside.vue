@@ -31,17 +31,17 @@
       <ul class="side-social-media-nav">
         <li>
           <a href="#github">
-            <img src="assets/github.svg" alt="github_icon" />
+            <img src="/github.svg" alt="github_icon" />
           </a>
         </li>
         <li>
           <a href="#instagram">
-            <img src="assets/instagram.svg" alt="instagram_icon" />
+            <img src="/instagram.svg" alt="instagram_icon" />
           </a>
         </li>
         <li>
           <a href="#twitter">
-            <img src="assets/twitter.svg" alt="twitter_icon" />
+            <img src="/twitter.svg" alt="twitter_icon" />
           </a>
         </li>
       </ul>

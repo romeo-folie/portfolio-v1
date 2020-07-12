@@ -126,8 +126,23 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'ProjectSection',
+  computed: {
+    ...mapState({
+      projects: (state) => state.projects,
+    }),
+  },
+  mounted() {
+    this.getProjects()
+  },
+  methods: {
+    getProjects() {
+      this.$store.dispatch('projects/fetchProjects')
+    },
+  },
 }
 </script>
 
