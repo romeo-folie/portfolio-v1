@@ -4,6 +4,13 @@ export default {
    ** See https://nuxtjs.org/api/configuration-mode
    */
   mode: 'universal',
+  publicRuntimeConfig: {
+    strapiBaseUri: process.env.API_URL || "http://localhost:1337",
+    apiToken: process.env.API_TOKEN
+  },
+  // privateRuntimeConfig: {
+  //   apiToken: process.env.API_TOKEN
+  // },
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -25,7 +32,7 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: '@/assets/js/app.js', body: true }],
+    script: [{ src: '/js/app.js', body: true }],
   },
   /*
    ** Global CSS
@@ -55,7 +62,8 @@ export default {
 
   apollo: {
     clientConfigs: {
-      default: '@/plugins/apollo-config.js'
+      default: '@/plugins/github-apollo-config.js',
+      otherClient: '@/plugins/strapi-apollo-config.js'
     }
   },
   /*
