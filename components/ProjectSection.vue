@@ -1,5 +1,9 @@
 <template>
-  <section id="projects" class="project-section">
+  <section
+    id="projects"
+    class="project-section"
+    data-aos="animate__bounceIn animate__slow"
+  >
     <h2>Some of my work</h2>
     <div class="project-grid">
       <ProjectCard />
@@ -27,7 +31,7 @@ export default {
     }),
   },
   mounted() {
-    this.getProjects()
+    // this.getProjects()
   },
   methods: {
     getProjects() {

@@ -1,5 +1,10 @@
 <template>
-  <section id="about" class="about-section" data-aos="animate__fadeInLeft">
+  <section
+    id="about"
+    class="about-section"
+    data-aos="animate__pulse"
+    data-aos-duration="2000"
+  >
     <div class="about-text">
       <h2>
         About Me
@@ -31,11 +36,11 @@ export default {
 </script>
 
 <style>
-/* [data-aos] {
+[data-aos] {
   visibility: hidden;
 }
 
 [data-aos].animate__animated {
   visibility: visible;
-} */
+}
 </style>

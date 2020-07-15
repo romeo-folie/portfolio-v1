@@ -1,16 +1,19 @@
 <template>
-  <section
-    class="intro-section"
-    data-aos="animate__fadeInUp animate__delay-1s animate__slow"
-  >
-    <h1>
-      Romeo Nutifafa Folie
-    </h1>
-    <h2>
-      Learner, Builder, Software Engineer.
-    </h2>
-    <h3>Accra, Ghana.</h3>
-    <a href="mailto:romeofolie1@gmail.com" class="contact-btn">
+  <section class="intro-section">
+    <div data-aos="animate__fadeInDown animate__delay-2s animate__slower">
+      <h1>
+        Romeo Nutifafa Folie
+      </h1>
+      <h2>
+        Learner, Builder, Software Engineer.
+      </h2>
+      <h3>Accra, Ghana.</h3>
+    </div>
+    <a
+      href="mailto:romeofolie1@gmail.com"
+      class="contact-btn"
+      data-aos="animate__fadeInUp animate__delay-3s animate__slower"
+    >
       Contact Me
     </a>
   </section>

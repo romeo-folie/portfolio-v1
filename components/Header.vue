@@ -1,5 +1,9 @@
 <template>
-  <header id="navbar" class="top-navigation">
+  <header
+    id="navbar"
+    class="top-navigation"
+    data-aos="animate__slideInDown animate__slow"
+  >
     <NavBar />
   </header>
 </template>

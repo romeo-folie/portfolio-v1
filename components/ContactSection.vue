@@ -1,7 +1,9 @@
 <template>
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section" data-aos="animate__tada">
     <h2>Contact Me</h2>
     <p>
+      Have a project in mind?
+      <br />
       I'd be happy to hear from you.
       <br />
       Cheers!

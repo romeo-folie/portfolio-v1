@@ -1,6 +1,10 @@
 <template>
   <footer class="footer">
-    <div class="footer-content-wrapper">
+    <div
+      class="footer-content-wrapper"
+      data-aos="animate__fadeInUp"
+      data-aos-anchor-placement="center-bottom"
+    >
       <ul class="social-media-nav-bottom">
         <li>
           <a href="#github">

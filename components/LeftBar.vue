@@ -2,7 +2,7 @@
   <div class="left-bar">
     <ul
       class="social-media-nav"
-      data-aos="animate__slideInLeft"
+      data-aos="animate__slideInLeft animate__delay-4s"
       data-aos-duration="2000"
     >
       <li>
@@ -33,12 +33,10 @@ export default {
 <style scoped>
 [data-aos] {
   opacity: 0;
-  visibility: hidden;
-  transition-delay: 2.2s;
+  transition-delay: 4s;
 }
 [data-aos].animate__animated {
   opacity: 1;
-  visibility: visible;
   pointer-events: inherit;
 }
 </style>
