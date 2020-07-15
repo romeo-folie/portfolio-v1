@@ -1,5 +1,10 @@
 <template>
-  <section id="contact" class="contact-section" data-aos="animate__tada">
+  <section
+    id="contact"
+    class="contact-section"
+    data-aos="animate__rubberBand"
+    data-aos-mirror="true"
+  >
     <h2>Contact Me</h2>
     <p>
       Have a project in mind?

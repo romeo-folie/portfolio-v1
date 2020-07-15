@@ -5,6 +5,7 @@
     data-aos="animate__flipInX"
     data-aos-duration="2000"
     data-aos-anchor-placement="top-center"
+    data-aos-mirror="true"
   >
     <h2>Skills</h2>
     <p>

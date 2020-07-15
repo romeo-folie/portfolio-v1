@@ -35,4 +35,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
+}
+</style>

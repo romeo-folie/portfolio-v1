@@ -4,6 +4,7 @@
     class="about-section"
     data-aos="animate__pulse"
     data-aos-duration="2000"
+    data-aos-mirror="true"
   >
     <div class="about-text">
       <h2>

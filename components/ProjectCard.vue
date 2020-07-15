@@ -1,5 +1,9 @@
 <template>
-  <div class="project-card" data-aos="animate__jello animate__slow">
+  <div
+    class="project-card"
+    data-aos="animate__jello animate__slow"
+    data-aos-mirror="true"
+  >
     <div class="project-card-content">
       <div class="project-links">
         <img src="/github.svg" alt="" />

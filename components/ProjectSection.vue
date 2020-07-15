@@ -3,6 +3,7 @@
     id="projects"
     class="project-section"
     data-aos="animate__bounceIn animate__slow"
+    data-aos-mirror="true"
   >
     <h2>Some of my work</h2>
     <div class="project-grid">
