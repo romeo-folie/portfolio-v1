@@ -1,7 +1,9 @@
 <template>
-  <section id="about" class="about-section">
+  <section id="about" class="about-section" data-aos="animate__fadeInLeft">
     <div class="about-text">
-      <h2>About Me</h2>
+      <h2>
+        About Me
+      </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -28,4 +30,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+/* [data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
+} */
+</style>

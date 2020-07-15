@@ -1,6 +1,11 @@
 <template>
   <div class="right-bar">
-    <a href="">romeofolie1@gmail.com</a>
+    <a
+      href="mailto:romeofolie1@gmail.com"
+      data-aos="animate__slideInRight"
+      data-aos-duration="2000"
+      >romeofolie1@gmail.com</a
+    >
   </div>
 </template>
 
@@ -10,4 +15,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+[data-aos] {
+  opacity: 0;
+  transition-delay: 2.2s;
+}
+[data-aos].animate__animated {
+  opacity: 1;
+}
+</style>

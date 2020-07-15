@@ -1,6 +1,10 @@
 <template>
   <div class="left-bar">
-    <ul class="social-media-nav">
+    <ul
+      class="social-media-nav"
+      data-aos="animate__slideInLeft"
+      data-aos-duration="2000"
+    >
       <li>
         <a href="#github">
           <img src="/github.svg" alt="github_icon" />
@@ -26,4 +30,15 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+[data-aos] {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 2.2s;
+}
+[data-aos].animate__animated {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
+}
+</style>

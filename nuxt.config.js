@@ -37,12 +37,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/app.css'],
+  css: ['@/assets/css/app.css', 'aos/dist/aos.css', '@/assets/css/animate.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [{src: '@/plugins/aos.js', ssr: false}],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

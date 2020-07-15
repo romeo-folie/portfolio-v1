@@ -1,19 +1,19 @@
 <template>
   <nav class="navbar">
-    <div class="brand">
+    <div class="brand" data-aos="animate__fadeInDown animate__slower">
       <a href="/">
         {rnf}
       </a>
     </div>
 
-    <ul class="navlist">
+    <ul class="navlist" data-aos="animate__fadeInDown animate__slower">
       <li><nuxt-link class="nav-link" to="/#about">About</nuxt-link></li>
       <li><nuxt-link class="nav-link" to="/#skills">Skills</nuxt-link></li>
       <li><nuxt-link class="nav-link" to="/#projects">Work</nuxt-link></li>
       <li><nuxt-link class="nav-link" to="/#contact">Contact</nuxt-link></li>
     </ul>
 
-    <div class="dropdown-menu">
+    <div class="dropdown-menu" data-aos="animate__fadeInDown animate__slower">
       <a
         class="dropdown-link"
         onclick="showSideNav()"
