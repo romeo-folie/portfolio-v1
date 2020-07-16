@@ -4,7 +4,6 @@
     class="skill-section"
     data-aos="animate__flipInX"
     data-aos-duration="2000"
-    data-aos-anchor-placement="top-center"
   >
     <h2>Skills</h2>
     <p>

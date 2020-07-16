@@ -2,7 +2,7 @@
   <section
     id="contact"
     class="contact-section"
-    data-aos="animate__fadeIn animate__delay-1s animate__slow"
+    data-aos="animate__fadeIn animate__slower"
   >
     <h2>Contact Me</h2>
     <p>
