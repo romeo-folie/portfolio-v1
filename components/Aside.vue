@@ -1,9 +1,6 @@
 <template>
   <aside id="side-nav" class="side-menu">
-    <div
-      class="aside-content-wrapper"
-      data-aos="animate__slideInRight animate__faster"
-    >
+    <div class="aside-content-wrapper">
       <div class="btn-container">
         <a href="javascript:void(0);" onclick="hideSideNav()">&#120;</a>
       </div>
@@ -20,12 +17,12 @@
           </li>
           <li>
             <a class="nav-link" href="#projects" onclick="hideSideNav()"
-              >Work</a
+              >Works</a
             >
           </li>
           <li>
             <a class="nav-link" href="#contact" onclick="hideSideNav()"
-              >Contact</a
+              >Contacts</a
             >
           </li>
         </ul>
@@ -58,4 +55,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos] {
+  visibility: visible;
+}
+</style>

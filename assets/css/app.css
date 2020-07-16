@@ -403,7 +403,7 @@ div.content-wrapper {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 35px;
+  padding-right: 50px;
   padding-top: 5px;
   align-items: center;
 }
