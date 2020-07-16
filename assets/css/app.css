@@ -71,6 +71,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 section {
@@ -522,6 +523,10 @@ div.dropdown-menu a:click {
 @media screen and (min-width: 1200px) {
   div.brand a {
     font-size: 2rem;
+  }
+
+  .navbar ul li a {
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 800px) {

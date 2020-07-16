@@ -25,6 +25,7 @@
         <ul class="tool-list">
           <li>HTML & (S)CSS</li>
           <li>Javascript &#8227; Vue</li>
+          <li>Dart &#8227; Flutter</li>
         </ul>
       </div>
       <div class="skill-category">
