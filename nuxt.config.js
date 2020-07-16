@@ -21,14 +21,14 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.author || 'Romeo Nutifafa Folie',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: process.env.description || 'Portfolio website',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/paytone-one-v12-latin-regular.woff2', crossorigin: true }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/cutive-mono-v8-latin-regular.woff2', crossorigin: true }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-v11-latin-800.woff2', crossorigin: true }],
