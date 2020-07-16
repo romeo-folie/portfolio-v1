@@ -2,8 +2,7 @@
   <section
     id="contact"
     class="contact-section"
-    data-aos="animate__rubberBand"
-    data-aos-mirror="true"
+    data-aos="animate__fadeIn animate__delay-1s animate__slow"
   >
     <h2>Contact Me</h2>
     <p>

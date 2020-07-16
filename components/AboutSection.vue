@@ -2,7 +2,7 @@
   <section
     id="about"
     class="about-section"
-    data-aos="animate__pulse"
+    data-aos="animate__pulse animate__delay-1s"
     data-aos-duration="2000"
     data-aos-mirror="true"
   >

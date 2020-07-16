@@ -1,4 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cutive+Mono&family=Fredericka+the+Great&family=Lato:wght@400;700;900&family=Paytone+One&family=Poppins:wght@600;700;800&display=swap");
+/* paytone-one-regular - latin */
+@font-face {
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Paytone One Regular'), local('PaytoneOne-Regular'),
+       url('/fonts/paytone-one-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/paytone-one-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cutive-mono-regular - latin */
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cutive Mono Regular'), local('CutiveMono-Regular'),
+       url('/fonts/cutive-mono-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/cutive-mono-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
+       url('/fonts/poppins-v11-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/poppins-v11-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .transparent-btn, .contact-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {
   background: transparent;
   color: #E3AE52;
@@ -493,10 +522,6 @@ div.dropdown-menu a:click {
 @media screen and (min-width: 1200px) {
   div.brand a {
     font-size: 2rem;
-  }
-
-  .navbar ul li a {
-    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 800px) {

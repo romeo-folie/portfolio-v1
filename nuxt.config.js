@@ -31,7 +31,7 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/paytone-one-v12-latin-regular.woff2', crossorigin: true }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/cutive-mono-v8-latin-regular.woff2', crossorigin: true }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-v11-latin-800.woff2', crossorigin: true }],
     script: [{ src: '/js/app.js', body: true }],
   },
   /*
