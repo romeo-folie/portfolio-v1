@@ -2,12 +2,11 @@
   <section id="projects" class="project-section">
     <h2>Some of my work</h2>
     <div class="project-grid">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ProjectCard
+        v-for="(project, index) in projects"
+        :key="index"
+        :repo="project"
+      ></ProjectCard>
     </div>
   </section>
 </template>
@@ -23,11 +22,11 @@ export default {
   },
   computed: {
     ...mapState({
-      projects: (state) => state.projects,
+      projects: (state) => state.projects.projects,
     }),
   },
   mounted() {
-    // this.getProjects()
+    this.getProjects()
   },
   methods: {
     getProjects() {

@@ -1,4 +1,6 @@
+/* eslint-disable */
 import gql from 'graphql-tag'
+import Vue from 'vue'
 
 // action types
 export const FETCH_PROJECTS = 'fetchProjects'
@@ -24,8 +26,6 @@ export const actions = {
       query: gql`
         query getProjects {
           user(login: "romeo-folie") {
-            bio
-            avatarUrl
             repositories(first: 30, privacy: PUBLIC) {
               nodes {
                 name
@@ -58,6 +58,14 @@ export const actions = {
         }
       `,
     })
-    commit(SET_PROJECTS, response.data.user.repositories.nodes)
+    
+    const allRepos = response.data.user.repositories.nodes
+    const allowedRepoTitles = ['Concert-Python', 'GNPC-Scholarship-Monitor', 'InternshipGhana']
+    
+    const filteredRepos = allRepos.filter(function(repo) {
+      return this.indexOf(repo.name) >= 0
+    }, allowedRepoTitles)
+
+    commit(SET_PROJECTS, filteredRepos)
   },
 }

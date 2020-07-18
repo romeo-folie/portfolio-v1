@@ -2,19 +2,16 @@
   <div class="project-card" data-aos="animate__fadeInUp">
     <div class="project-card-content">
       <div class="project-links">
-        <img src="/github.svg" alt="" />
+        <a :href="repo.url" target="_blank"><img src="/github.svg" alt="" /></a>
       </div>
-      <h3>Project Title</h3>
+      <h3>{{ repo.name }}</h3>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat
+        {{ repo.description }}
       </p>
       <ul class="project-stack">
-        <li>#html</li>
-        <li>#sass</li>
-        <li>#javascript</li>
+        <li v-for="tag in repo.repositoryTopics.nodes" :key="tag.topic.name">
+          #{{ tag.topic.name }}
+        </li>
       </ul>
     </div>
   </div>
@@ -23,6 +20,12 @@
 <script>
 export default {
   name: 'ProjectCard',
+  props: {
+    repo: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>
 

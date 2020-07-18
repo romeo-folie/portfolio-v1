@@ -305,6 +305,10 @@ div.content-wrapper {
   background-color: #011C2B;
 }
 .project-section .project-grid .project-card .project-card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
 }
 .project-section .project-grid .project-card .project-card-content .project-links {
