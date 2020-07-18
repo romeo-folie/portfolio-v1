@@ -316,11 +316,12 @@ div.content-wrapper {
   justify-content: flex-end;
 }
 .project-section .project-grid .project-card .project-card-content h3 {
-  font-size: 19px;
+  font-size: 1.2rem;
+  margin: 10px 0;
   color: #E3AE52;
 }
 .project-section .project-grid .project-card .project-card-content p {
-  font-size: 16px;
+  font-size: 0.9rem;
   color: #E3AE52;
 }
 .project-section .project-grid .project-card .project-card-content .project-stack {
@@ -328,7 +329,7 @@ div.content-wrapper {
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  font-size: 15px;
+  font-size: 0.8rem;
 }
 .project-section .project-grid .project-card .project-card-content .project-stack li {
   color: #fff;
