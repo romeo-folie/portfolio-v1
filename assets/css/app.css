@@ -329,7 +329,7 @@ div.content-wrapper {
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 .project-section .project-grid .project-card .project-card-content .project-stack li {
   color: #fff;
