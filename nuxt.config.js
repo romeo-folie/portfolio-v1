@@ -5,8 +5,8 @@ export default {
    */
   mode: 'universal',
   publicRuntimeConfig: {
-    strapiBaseUri: process.env.API_URL || "http://localhost:1337",
-    apiToken: process.env.API_TOKEN
+    strapiBaseUri: process.env.API_URL || 'http://localhost:1337',
+    apiToken: process.env.API_TOKEN,
   },
   // privateRuntimeConfig: {
   //   apiToken: process.env.API_TOKEN
@@ -31,7 +31,30 @@ export default {
         content: process.env.description || 'Portfolio website',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/paytone-one-v12-latin-regular.woff2', crossorigin: true }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/cutive-mono-v8-latin-regular.woff2', crossorigin: true }, { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-v11-latin-800.woff2', crossorigin: true }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff2',
+        href: '/fonts/paytone-one-v12-latin-regular.woff2',
+        crossorigin: true,
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff2',
+        href: '/fonts/cutive-mono-v8-latin-regular.woff2',
+        crossorigin: true,
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff2',
+        href: '/fonts/poppins-v11-latin-800.woff2',
+        crossorigin: true,
+      },
+    ],
     script: [{ src: '/js/app.js', body: true }],
   },
   /*
@@ -42,7 +65,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{src: '@/plugins/aos.js', ssr: false}],
+  plugins: [{ src: '@/plugins/aos.js', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -63,8 +86,8 @@ export default {
   apollo: {
     clientConfigs: {
       default: '@/plugins/github-apollo-config.js',
-      otherClient: '@/plugins/strapi-apollo-config.js'
-    }
+      otherClient: '@/plugins/strapi-apollo-config.js',
+    },
   },
   /*
    ** Build configuration

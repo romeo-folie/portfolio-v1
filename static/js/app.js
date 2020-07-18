@@ -14,6 +14,8 @@ window.onscroll = function () {
 
 function showSideNav() {
   const sideNavToggle = document.getElementById('side-nav')
+  const mediaNav = document.getElementById('social-media-nav-bottom')
+  mediaNav.style.visibility = 'hidden'
   if (sideNavToggle.className === 'side-menu') {
     sideNavToggle.className += ' show'
   } else {
@@ -23,6 +25,8 @@ function showSideNav() {
 
 function hideSideNav() {
   const sideNavToggle = document.getElementById('side-nav')
+  const mediaNav = document.getElementById('social-media-nav-bottom')
+  mediaNav.style.visibility = 'visible'
   if (sideNavToggle.className === 'side-menu show') {
     sideNavToggle.className = 'side-menu'
   }
