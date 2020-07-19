@@ -27,8 +27,8 @@
         class="dropdown-link"
         onclick="showSideNav()"
         href="javascript:void(0);"
-        >&#9776;</a
-      >
+        ><img src="/menu.svg" alt="menu_icon"
+      /></a>
     </div>
   </nav>
 </template>

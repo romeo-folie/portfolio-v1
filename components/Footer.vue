@@ -7,7 +7,11 @@
     >
       <ul id="social-media-nav-bottom" class="social-media-nav-bottom">
         <li>
-          <a target="_blank" href="https://github.com/romeo-folie">
+          <a
+            target="_blank"
+            href="https://github.com/romeo-folie"
+            rel="noreferrer noopener"
+          >
             <img src="/github.svg" alt="github_icon" />
           </a>
         </li>
@@ -15,17 +19,26 @@
           <a
             target="_blank"
             href="https://linkedin.com/in/romeo-nutifafa-folie-464a25160"
+            rel="noreferrer noopener"
           >
             <img src="/linkedin.svg" alt="linkedin_icon" />
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://instagram.com/romeo__nf">
+          <a
+            target="_blank"
+            href="https://instagram.com/romeo__nf"
+            rel="noreferrer noopener"
+          >
             <img src="/instagram.svg" alt="instagram_icon" />
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://twitter.com/rxnf_">
+          <a
+            target="_blank"
+            href="https://twitter.com/rxnf_"
+            rel="noreferrer noopener"
+          >
             <img src="/twitter.svg" alt="twitter_icon" />
           </a>
         </li>

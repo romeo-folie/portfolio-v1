@@ -24,17 +24,17 @@
         <input class="skill-range" min="1" max="100" value="85" type="range" />
         <ul class="tool-list">
           <li>HTML & (S)CSS</li>
-          <li>Javascript &#8227; Vue</li>
-          <li>Dart &#8227; Flutter</li>
+          <li>Javascript ▹ Vue</li>
+          <li>Dart ▹ Flutter</li>
         </ul>
       </div>
       <div class="skill-category">
         <h3>Backend</h3>
         <input class="skill-range" min="1" max="100" value="90" type="range" />
         <ul class="tool-list">
-          <li>Javascript &#8227; Node</li>
-          <li>Python &#8227; Django</li>
-          <li>PHP &#8227; Laravel</li>
+          <li>Javascript ▹ Node</li>
+          <li>Python ▹ Django</li>
+          <li>PHP ▹ Laravel</li>
           <li>GraphQL</li>
         </ul>
       </div>

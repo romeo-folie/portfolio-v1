@@ -65,7 +65,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '@/plugins/aos.js', ssr: false }],
+  plugins: [{ src: '@/plugins/aos.js', ssr: false }, { src: '@/plugins/vuex-cache.js', ssr: false}],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -93,5 +93,7 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    transpile: ['@/plugins/vuex-cache']
+  },
 }

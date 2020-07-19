@@ -1,6 +1,5 @@
 /* eslint-disable */
 import gql from 'graphql-tag'
-import Vue from 'vue'
 
 // action types
 export const FETCH_PROJECTS = 'fetchProjects'
@@ -26,7 +25,7 @@ export const actions = {
       query: gql`
         query getProjects {
           user(login: "romeo-folie") {
-            repositories(first: 30, privacy: PUBLIC) {
+            repositories(first: 20, privacy: PUBLIC) {
               nodes {
                 name
                 url
@@ -41,7 +40,7 @@ export const actions = {
                 }
                 homepageUrl
                 description
-                repositoryTopics(first: 5) {
+                repositoryTopics(first: 3) {
                   nodes {
                     topic {
                       name

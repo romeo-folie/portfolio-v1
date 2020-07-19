@@ -411,8 +411,8 @@ div.content-wrapper {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 50px;
-  padding-top: 5px;
+  padding-right: 40px;
+  padding-top: 10px;
   align-items: center;
 }
 .side-menu .aside-content-wrapper .btn-container a {
@@ -421,6 +421,9 @@ div.content-wrapper {
   font-size: 2.5rem;
   font-family: sans-serif;
   outline: none;
+}
+.side-menu .aside-content-wrapper .btn-container a img {
+  margin-top: 10px;
 }
 
 .side-menu.show {
@@ -516,6 +519,9 @@ div.dropdown-menu a {
 }
 div.dropdown-menu a:click {
   outline: none;
+}
+div.dropdown-menu a img {
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {

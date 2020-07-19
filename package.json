@@ -18,7 +18,8 @@
     "aos": "^3.0.0-beta.6",
     "core-js": "2",
     "graphql-tag": "^2.10.4",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.13.0",
+    "vuex-cache": "^3.2.0"
   },
   "devDependencies": {
     "@babel/runtime-corejs2": "^7.10.4",
