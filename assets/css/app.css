@@ -490,6 +490,7 @@ div.content-wrapper {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  margin-right: 10px;
 }
 .navbar ul li:not(:first-of-type) {
   margin-left: 20px;

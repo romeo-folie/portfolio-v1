@@ -10,11 +10,12 @@
       <h3>Accra, Ghana.</h3>
     </div>
     <a
-      href="mailto:romeofolie1@gmail.com"
+      href="/#projects"
       class="contact-btn"
       data-aos="animate__fadeInUp animate__delay-3s animate__slower"
+      data-aos-anchor="top-bottom"
     >
-      Contact Me
+      See my work
     </a>
   </section>
 </template>
