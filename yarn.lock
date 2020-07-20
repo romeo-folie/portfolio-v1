@@ -2215,7 +2215,7 @@ apollo-cache-control@^0.11.1:
     apollo-server-env "^2.4.5"
     apollo-server-plugin-base "^0.9.1"
 
-apollo-cache-inmemory@^1.6.3:
+apollo-cache-inmemory@^1.6.3, apollo-cache-inmemory@^1.6.6:
   version "1.6.6"
   resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.6.6.tgz#56d1f2a463a6b9db32e9fa990af16d2a008206fd"
   integrity sha512-L8pToTW/+Xru2FFAhkZ1OA9q4V4nuvfoPecBM34DecAugUZEBhI2Hmpgnzq2hTKZ60LAMrlqiASm0aqAY6F8/A==
@@ -10670,11 +10670,6 @@ vue@^2.6.11:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
-
-vuex-cache@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/vuex-cache/-/vuex-cache-3.2.0.tgz#aaed9f223649f23cc42fdc025b3262bc7223a20c"
-  integrity sha512-FCm8R3qNkSrDJz3hXrC9kJq5kgBWlAHzkFsy9eoETj+ox+YI/cZuOge7J3j84dojzngfsiO/CahSgkQTPA0bQQ==
 
 vuex@^3.5.1:
   version "3.5.1"

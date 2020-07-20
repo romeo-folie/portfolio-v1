@@ -2,7 +2,9 @@
   <div class="project-card" data-aos="animate__fadeInUp">
     <div class="project-card-content">
       <div class="project-links">
-        <a :href="repo.url" target="_blank"><img src="/github.svg" alt="" /></a>
+        <a :href="repo.url" target="_blank" rel="noreferrer noopener"
+          ><img src="/github.svg" alt=""
+        /></a>
       </div>
       <h3>{{ repo.name }}</h3>
       <p>

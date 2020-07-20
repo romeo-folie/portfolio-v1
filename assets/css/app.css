@@ -6,6 +6,7 @@
   src: local('Paytone One Regular'), local('PaytoneOne-Regular'),
        url('/fonts/paytone-one-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/fonts/paytone-one-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: fallback;
 }
 
 /* cutive-mono-regular - latin */
@@ -16,6 +17,7 @@
   src: local('Cutive Mono Regular'), local('CutiveMono-Regular'),
        url('/fonts/cutive-mono-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/fonts/cutive-mono-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: fallback;
 }
 
 /* poppins-800 - latin */
@@ -26,6 +28,7 @@
   src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
        url('/fonts/poppins-v11-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/fonts/poppins-v11-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: fallback;
 }
 
 .transparent-btn, .contact-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {

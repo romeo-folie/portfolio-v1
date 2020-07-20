@@ -65,7 +65,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '@/plugins/aos.js', ssr: false }, { src: '@/plugins/vuex-cache.js', ssr: false}],
+  plugins: [{ src: '@/plugins/aos.js', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -84,16 +84,19 @@ export default {
   modules: ['@nuxtjs/pwa', '@nuxtjs/apollo'],
 
   apollo: {
+    // defaultOptions: {
+    //   $query: {
+    //     fetchPolicy: 'cache-and-network',
+    //   }
+    // },
     clientConfigs: {
       default: '@/plugins/github-apollo-config.js',
-      otherClient: '@/plugins/strapi-apollo-config.js',
+      // otherClient: '@/plugins/strapi-apollo-config.js',
     },
   },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {
-    transpile: ['@/plugins/vuex-cache']
-  },
+  build: {},
 }

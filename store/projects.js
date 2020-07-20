@@ -56,6 +56,7 @@ export const actions = {
           }
         }
       `,
+      prefetch: true,
     })
     
     const allRepos = response.data.user.repositories.nodes
