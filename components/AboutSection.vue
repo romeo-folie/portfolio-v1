@@ -22,7 +22,7 @@
       </p>
 
       <a href="#cv-download" class="cv-download-btn">
-        Download CV
+        View CV
       </a>
     </div>
 

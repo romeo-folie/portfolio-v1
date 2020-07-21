@@ -24,8 +24,8 @@
         <input class="skill-range" min="1" max="100" value="85" type="range" />
         <ul class="tool-list">
           <li>HTML & (S)CSS</li>
-          <li>Javascript ▹ Vue</li>
           <li>Dart ▹ Flutter</li>
+          <li>Javascript ▹ Vue</li>
         </ul>
       </div>
       <div class="skill-category">
