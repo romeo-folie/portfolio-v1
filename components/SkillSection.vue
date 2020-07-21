@@ -7,8 +7,8 @@
   >
     <h2>Skills</h2>
     <p>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.
+      In my current role where I mostly ship code for the web and mobile, here's
+      some of the technologies that I work with regularly.
     </p>
     <div class="skill-categories-wrapper">
       <div class="skill-category">

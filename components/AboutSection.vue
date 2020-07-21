@@ -11,14 +11,29 @@
         About Me
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Hi my name is Romeo. I'm an Accra based software engineer and I love to
+        solve problems and bring ideas to life with code.
         <br />
         <br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
+        I spend most of my days building software that runs on the web and
+        mobile. My primary aim is to deliver functional, robust, and
+        aesthetically pleasing software to my users.
+        <br />
+        <br />
+        Aside programming, I love to workout, cook, and read. I'm also
+        passionate about all things tech and engineering so feel free to reach
+        out to discuss those or any opportunities you might have for me.
+        <br />
+        <br />
+        I currently work with
+        <a
+          href="https://bewsys.com"
+          class="bewsys-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >bewsys</a
+        >
+        where we build custom life changing solutions.
       </p>
 
       <a href="#cv-download" class="cv-download-btn">
@@ -43,5 +58,10 @@ export default {
 
 [data-aos].animate__animated {
   visibility: visible;
+}
+
+a.bewsys-link {
+  color: #fff;
+  text-decoration: none;
 }
 </style>

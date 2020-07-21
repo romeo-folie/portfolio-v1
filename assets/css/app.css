@@ -225,6 +225,13 @@ div.content-wrapper {
   display: flex;
   flex-direction: column;
 }
+.about-section .about-text p {
+  font-size: 1.3rem;
+}
+.about-section .about-text .cv-download-btn {
+  margin-top: 10px;
+}
+
 .skill-section {
   display: flex;
   flex-direction: column;
