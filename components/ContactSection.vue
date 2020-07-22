@@ -13,7 +13,7 @@
       Cheers!
     </p>
     <a href="mailto:romeofolie1@gmail.com" class="message-btn">
-      Message Me
+      Message me
     </a>
   </section>
 </template>

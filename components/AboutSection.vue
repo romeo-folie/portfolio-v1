@@ -21,7 +21,7 @@
         <br />
         <br />
         Aside programming, I love to workout, cook, and read. I'm also
-        passionate about all things tech and engineering so feel free to reach
+        passionate about all things tech and engineering, so feel free to reach
         out to discuss those or any opportunities you might have for me.
         <br />
         <br />
