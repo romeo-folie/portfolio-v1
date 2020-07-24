@@ -634,7 +634,7 @@ div.content-wrapper {
     font-size: 2.4rem;
   }
   .post-view .post-content-wrapper .title-date span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .post-view .post-content-wrapper p {
     font-size: 1.4rem;
@@ -643,6 +643,9 @@ div.content-wrapper {
 @media only screen and (min-width: 1400px) {
   .post-view .post-content-wrapper .title-date h3 {
     font-size: 2.5rem;
+  }
+  .post-view .post-content-wrapper .title-date span {
+    font-size: 1.2rem;
   }
 }
 .side-menu {

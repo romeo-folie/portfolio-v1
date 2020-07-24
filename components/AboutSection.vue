@@ -20,9 +20,9 @@
         aesthetically pleasing software to my users.
         <br />
         <br />
-        Aside programming, I love to workout, cook, and read. I'm also
-        passionate about all things tech and engineering, so feel free to reach
-        out to discuss those or any opportunities you might have for me.
+        Aside programming, I love to workout, cook, and read. I'm always down
+        for a chat on anything tech and engineering so feel free to reach out to
+        discuss those or any opportunities you might have for me.
         <br />
         <br />
         I currently work with
