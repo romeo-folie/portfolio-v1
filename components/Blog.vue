@@ -2,22 +2,32 @@
   <section class="blog-list-section">
     <h2>Thoughts</h2>
     <div class="blog-post-wrapper">
-      <BlogPost />
-      <BlogPost />
-      <BlogPost />
-      <BlogPost />
-      <BlogPost />
+      <BlogPost v-for="(post, index) in posts" :key="index" :post="post" />
     </div>
   </section>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import BlogPost from './BlogPost'
 
 export default {
   name: 'Blog',
   components: {
     BlogPost,
+  },
+  computed: {
+    ...mapState({
+      posts: (state) => state.blogposts.posts,
+    }),
+  },
+  mounted() {
+    this.getPosts()
+  },
+  methods: {
+    getPosts() {
+      this.$store.dispatch('blogposts/fetchBlogPosts')
+    },
   },
 }
 </script>

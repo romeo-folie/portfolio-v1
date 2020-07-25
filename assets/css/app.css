@@ -402,15 +402,17 @@ div.content-wrapper {
   white-space: nowrap;
   font-weight: 100;
   flex: 1;
+  text-transform: uppercase;
 }
 .blog-list-section .blog-post-wrapper .blog-post .date-tl .date span {
-  color: #fff;
+  color: #D3D3D3;
+  text-transform: uppercase;
 }
 .blog-list-section .blog-post-wrapper .blog-post .date-tl .vertical-line {
   width: 0.75px;
   height: auto;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #D3D3D3;
   flex: 3;
 }
 .blog-list-section .blog-post-wrapper .blog-post .post-text {
@@ -533,8 +535,9 @@ div.content-wrapper {
   margin-right: 30px;
 }
 .post-view .post-content-wrapper .title-date span {
-  color: #fff;
+  color: #D3D3D3;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 .post-view .post-content-wrapper img {
   width: auto;
@@ -542,7 +545,11 @@ div.content-wrapper {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.post-view .post-content-wrapper p {
+.post-view .post-content-wrapper .article-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.post-view .post-content-wrapper .article-wrapper p {
   text-align: left;
   margin-top: 20px;
   color: #fff;
@@ -560,7 +567,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 300px;
   }
-  .post-view .post-content-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper p {
     font-size: 1.1rem;
   }
 }
@@ -571,7 +578,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 250px;
   }
-  .post-view .post-content-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper p {
     font-size: 1.1rem;
   }
 }
@@ -587,7 +594,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 225px;
   }
-  .post-view .post-content-wrapper p {
+  .post-view .post-content-wrapper .article-continer p {
     font-size: 1rem;
   }
 }
@@ -603,7 +610,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 180px;
   }
-  .post-view .post-content-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper p {
     font-size: 0.95rem;
   }
 }
@@ -622,7 +629,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 145px;
   }
-  .post-view .post-content-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper p {
     font-size: 0.9;
   }
 }
@@ -636,7 +643,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper .title-date span {
     font-size: 1rem;
   }
-  .post-view .post-content-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper p {
     font-size: 1.4rem;
   }
 }
@@ -763,6 +770,11 @@ div.content-wrapper {
 @media only screen and (max-width: 500px) {
   .footer .footer-content-wrapper h3 {
     font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 312px) {
+  .footer .footer-content-wrapper h3 {
+    font-size: 0.9rem;
   }
 }
 .navbar {

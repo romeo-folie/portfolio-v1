@@ -5,12 +5,10 @@ export default {
    */
   mode: 'universal',
   publicRuntimeConfig: {
-    strapiBaseUri: process.env.API_URL || 'http://localhost:1337',
-    apiToken: process.env.API_TOKEN,
+    strapiBaseUri: process.env.STRAPI_BASE,
+    githubApiToken: process.env.GITHUB_API_TOKEN,
+    strapiLiveUri: process.env.STRAPI_URL
   },
-  // privateRuntimeConfig: {
-  //   apiToken: process.env.API_TOKEN
-  // },
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -28,7 +26,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.description || 'Portfolio website',
+        content: process.env.description || 'Developer Portfolio website',
       },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#041721' },
@@ -98,21 +96,20 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
+    '@nuxtjs/moment',
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/apollo'],
-
+  modules: ['@nuxtjs/pwa', '@nuxtjs/apollo', '@nuxtjs/markdownit'],
+  markdownit: {
+    injected: true,
+    html: false,
+  },
   apollo: {
-    // defaultOptions: {
-    //   $query: {
-    //     fetchPolicy: 'cache-and-network',
-    //   }
-    // },
     clientConfigs: {
       default: '@/plugins/github-apollo-config.js',
-      // otherClient: '@/plugins/strapi-apollo-config.js',
+      otherClient: '@/plugins/strapi-apollo-config.js',
     },
   },
   /*

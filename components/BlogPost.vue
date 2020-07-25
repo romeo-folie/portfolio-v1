@@ -2,21 +2,20 @@
   <div class="blog-post">
     <div class="date-tl">
       <h3 class="date">
-        JUL 15
+        {{ $moment(post.published_at).format('MMM DD') }}
         <br />
-        <span>2020</span>
+        <span>{{ $moment(post.published_at).format('YYYY') }}</span>
       </h3>
       <div class="vertical-line"></div>
     </div>
     <div class="post-text">
-      <h3>First attempt at designing a blog</h3>
+      <h3>{{ post.title }}</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
-        voluptatibus nemo et ipsum, fugit necessitatibus possimus facere iste
-        earum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nostrum, necessitatibus?
+        {{ post.content }}
       </p>
-      <nuxt-link to="/blog/post/1">Read more</nuxt-link>
+      <nuxt-link :to="{ name: 'blog-post-id', params: { id: post.id } }"
+        >Read more</nuxt-link
+      >
     </div>
   </div>
 </template>
@@ -24,6 +23,12 @@
 <script>
 export default {
   name: 'BlogPost',
+  props: {
+    post: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>
 

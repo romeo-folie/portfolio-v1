@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "aos": "^3.0.0-beta.6",
-    "apollo-cache-inmemory": "^1.6.6",
     "core-js": "2",
     "graphql-tag": "^2.10.4",
     "nuxt": "^2.13.0"
@@ -25,6 +25,7 @@
     "@babel/runtime-corejs2": "^7.10.4",
     "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/moment": "^1.6.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",

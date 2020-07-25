@@ -2,37 +2,16 @@
   <section class="post-view">
     <div class="post-content-wrapper">
       <div class="title-date">
-        <h3>First attempt at designing a blog</h3>
-        <span>JUL 25</span>
+        <h3>{{ post.title }}</h3>
+        <span>{{ $moment(post.published_at).format('MMM DD') }}</span>
       </div>
 
-      <img src="/pawpaw.jpg" alt="headline_img" />
+      <img v-if="post.image" :src="imageUrl" :alt="post.image.name" />
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
-        reiciendis, aliquam voluptatem repudiandae soluta quibusdam doloremque
-        quidem libero, impedit sapiente delectus maxime nisi ab ipsa fugit
-        recusandae quas repellat.
-        <br />
-        <br />
-        Quaerat aut perspiciatis aspernatur laborum error numquam commodi, vitae
-        quidem autem rem totam! Fugiat, aliquam blanditiis. Harum laudantium
-        modi nam saepe.
-        <br />
-        <br />
-        Quaerat aut perspiciatis aspernatur laborum error numquam commodi, vitae
-        quidem autem rem totam! Fugiat, aliquam blanditiis. Harum laudantium
-        modi nam saepe. Quaerat aut perspiciatis aspernatur laborum error
-        numquam commodi, vitae quidem autem rem totam! Fugiat, aliquam
-        blanditiis. Harum laudantium modi nam saepe.
-        <br />
-        <br />
-        Quaerat aut perspiciatis aspernatur laborum error numquam commodi, vitae
-        quidem autem rem totam! Fugiat, aliquam blanditiis. Harum laudantium
-        modi nam saepe.
-        <br />
-        <br />
-      </p>
+      <div class="article-wrapper">
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <p v-if="post.content" v-html="$md.render(post.content.toString())"></p>
+      </div>
     </div>
   </section>
 </template>
@@ -40,6 +19,20 @@
 <script>
 export default {
   name: 'BlogPostView',
+  props: {
+    post: {
+      type: Object,
+      required: true,
+    },
+  },
+  computed: {
+    imageUrl() {
+      if (this.post.image) {
+        return this.$config.strapiBaseUri + this.post.image.url
+      }
+      return ''
+    },
+  },
 }
 </script>
 

@@ -1,6 +1,5 @@
-export default function (ctx) {
+export default function ({ $config }) {
   return {
-    httpEndpoint: 'http://localhost:1337/graphql',
-    browserHttpEndpoint: '/graphql',
+    httpEndpoint: $config.strapiLiveUri,
   }
 }

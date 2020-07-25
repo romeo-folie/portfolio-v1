@@ -33,7 +33,7 @@
           rel="noopener noreferrer"
           >bewsys</a
         >
-        where we build custom life changing solutions.
+        where we build custom life changing software solutions.
       </p>
 
       <a href="#cv-download" class="cv-download-btn">
