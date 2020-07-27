@@ -10,7 +10,9 @@
     </div>
     <div class="post-text">
       <h3>
-        <nuxt-link :to="post.id">{{ post.title }}</nuxt-link>
+        <nuxt-link :to="{ name: 'blog-post-id', params: { id: post.id } }">{{
+          post.title
+        }}</nuxt-link>
       </h3>
       <p>
         {{ post.content }}

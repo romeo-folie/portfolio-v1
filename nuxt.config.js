@@ -79,7 +79,8 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/app.css', 'aos/dist/aos.css', '@/assets/css/animate.css'],
+  css: ['@/assets/css/app.css', 'aos/dist/aos.css', '@/assets/css/animate.css', '@/assets/css/spinkit.min.css'],
+  loading: '@/components/Loading.vue',
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins

@@ -6,7 +6,7 @@
     <div class="post-content-wrapper">
       <div class="title-date">
         <h3>{{ post.title }}</h3>
-        <span>{{ $moment(post.published_at).format('MMM DD') }}</span>
+        <span v-if="post.published_at">{{ $moment(post.published_at).format('MMM DD') }}</span>
       </div>
 
       <img v-if="post.image" :src="post.image.url" :alt="post.image.name" />
@@ -29,14 +29,6 @@ export default {
     post: {
       type: Object,
       required: true,
-    },
-  },
-  computed: {
-    imageUrl() {
-      if (this.post.image) {
-        return this.$config.strapiBaseUri + this.post.image.url
-      }
-      return ''
     },
   },
 }
