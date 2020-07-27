@@ -60,7 +60,7 @@ export const actions = {
     })
     
     const allRepos = response.data.user.repositories.nodes
-    const allowedRepoTitles = ['Concert-Python', 'GNPC-Scholarship-Monitor', 'InternshipGhana']
+    const allowedRepoTitles = ['Concert-Python', 'GNPC-Scholarship-Monitor', 'InternshipGhana', 'portfolio-v1', 'portfolio-v1-bare-bones']
     
     const filteredRepos = allRepos.filter(function(repo) {
       return this.indexOf(repo.name) >= 0

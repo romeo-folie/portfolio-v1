@@ -22,14 +22,10 @@ export default {
     }),
   },
   mounted() {
-    // this.$nextTick(() => {
     this.getPosts()
-    // this.$nuxt.$loading.finish()
-    // })
   },
   methods: {
     getPosts() {
-      // this.$nuxt.$loading.start()
       this.$store.dispatch('blogposts/fetchBlogPosts')
     },
   },
