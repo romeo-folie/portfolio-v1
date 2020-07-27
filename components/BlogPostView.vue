@@ -1,18 +1,24 @@
+<!-- eslint-disable -->
+
 <template>
   <section class="post-view">
+    <client-only>
     <div class="post-content-wrapper">
       <div class="title-date">
         <h3>{{ post.title }}</h3>
         <span>{{ $moment(post.published_at).format('MMM DD') }}</span>
       </div>
 
-      <img v-if="post.image" :src="imageUrl" :alt="post.image.name" />
+      <img v-if="post.image" :src="post.image.url" :alt="post.image.name" />
 
       <div class="article-wrapper">
-        <!-- eslint-disable-next-line vue/no-v-html -->
-        <p v-if="post.content" v-html="$md.render(post.content.toString())"></p>
+          <article
+            v-if="post.content"
+            v-html="$md.render(post.content.toString())"
+          ></article>
       </div>
     </div>
+  </client-only>
   </section>
 </template>
 

@@ -7,7 +7,7 @@ export default {
   publicRuntimeConfig: {
     strapiBaseUri: process.env.STRAPI_BASE,
     githubApiToken: process.env.GITHUB_API_TOKEN,
-    strapiLiveUri: process.env.STRAPI_URL
+    strapiLiveUri: process.env.STRAPI_URL,
   },
   /*
    ** Nuxt target
@@ -84,7 +84,10 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '@/plugins/aos.js', ssr: false }],
+  plugins: [
+    { src: '@/plugins/aos.js', ssr: false },
+    { src: '@/plugins/localStorage.js', ssr: false },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

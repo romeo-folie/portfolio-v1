@@ -9,7 +9,9 @@
       <div class="vertical-line"></div>
     </div>
     <div class="post-text">
-      <h3>{{ post.title }}</h3>
+      <h3>
+        <nuxt-link :to="post.id">{{ post.title }}</nuxt-link>
+      </h3>
       <p>
         {{ post.content }}
       </p>

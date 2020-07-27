@@ -431,6 +431,9 @@ div.content-wrapper {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.blog-list-section .blog-post-wrapper .blog-post .post-text h3 a {
+  font-size: inherit;
+}
 .blog-list-section .blog-post-wrapper .blog-post .post-text p {
   color: #fff;
   text-align: left;
@@ -549,7 +552,7 @@ div.content-wrapper {
   width: 90%;
   margin: 0 auto;
 }
-.post-view .post-content-wrapper .article-wrapper p {
+.post-view .post-content-wrapper .article-wrapper article {
   text-align: left;
   margin-top: 20px;
   color: #fff;
@@ -567,7 +570,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 300px;
   }
-  .post-view .post-content-wrapper .article-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper article {
     font-size: 1.1rem;
   }
 }
@@ -578,7 +581,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 250px;
   }
-  .post-view .post-content-wrapper .article-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper article {
     font-size: 1.1rem;
   }
 }
@@ -594,7 +597,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 225px;
   }
-  .post-view .post-content-wrapper .article-continer p {
+  .post-view .post-content-wrapper .article-continer article {
     font-size: 1rem;
   }
 }
@@ -610,7 +613,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 180px;
   }
-  .post-view .post-content-wrapper .article-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper article {
     font-size: 0.95rem;
   }
 }
@@ -629,7 +632,7 @@ div.content-wrapper {
   .post-view .post-content-wrapper img {
     max-height: 145px;
   }
-  .post-view .post-content-wrapper .article-wrapper p {
+  .post-view .post-content-wrapper .article-wrapper article {
     font-size: 0.9;
   }
 }
@@ -643,8 +646,8 @@ div.content-wrapper {
   .post-view .post-content-wrapper .title-date span {
     font-size: 1rem;
   }
-  .post-view .post-content-wrapper .article-wrapper p {
-    font-size: 1.4rem;
+  .post-view .post-content-wrapper .article-wrapper article {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -652,7 +655,10 @@ div.content-wrapper {
     font-size: 2.5rem;
   }
   .post-view .post-content-wrapper .title-date span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .post-view .post-content-wrapper .article-wrapper article {
+    font-size: 1.3rem;
   }
 }
 .side-menu {
