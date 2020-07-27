@@ -25,7 +25,7 @@ export const actions = {
       query: gql`
         query getProjects {
           user(login: "romeo-folie") {
-            repositories(first: 20, privacy: PUBLIC) {
+            repositories(first: 30, privacy: PUBLIC) {
               nodes {
                 name
                 url
