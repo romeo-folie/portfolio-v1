@@ -73,6 +73,16 @@ export default {
         href: '/fonts/poppins-v11-latin-800.woff2',
         crossorigin: true,
       },
+      {
+        rel: 'preconnect',
+        href: 'https://api.github.com',
+        crossorigin: true,
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://cdn.jsdelivr.net',
+        crossorigin: true,
+      }
     ],
     script: [{ src: '/js/app.js', body: true }],
   },
@@ -115,6 +125,12 @@ export default {
       default: '@/plugins/github-apollo-config.js',
       otherClient: '@/plugins/strapi-apollo-config.js',
     },
+  },
+  pwa: {
+    manifest: {
+      name: 'folie_dev',
+      lang: 'en'
+    }
   },
   /*
    ** Build configuration
