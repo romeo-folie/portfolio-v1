@@ -18,6 +18,13 @@ export const state = () => ({
   loading: false,
 })
 
+
+export const getters = {
+  getPostById: (state) => (id) => {
+    return state.posts.find((post) => post.id === id)
+  },
+}
+
 export const mutations = {
   [SET_POSTS]: (state, payload) => {
     state.posts = payload
@@ -44,6 +51,10 @@ export const actions = {
           articles (sort: "published_at:DESC") {
             id
             title
+            image{
+              name
+              url
+            }
             content
             published_at
           }
@@ -57,33 +68,41 @@ export const actions = {
     commit(SET_LOADING, false)
   },
 
-  async [FETCH_POST]({ commit }, id) {
+  async [FETCH_POST]({ commit, getters }, id) {
     commit(CLEAR_POST)
     commit(SET_LOADING, true)
+
     const strapiClient = this.app.apolloProvider.clients.otherClient
-
-    const response = await strapiClient.query({
-      query: gql`
-        query getPost($id: ID!) {
-          article(id: $id) {
-            id
-            title
-            image{
-              name
-              url
+    let post = getters.getPostById(id)
+    
+    if(post){
+      commit(SET_POST, post)
+    } else {
+      const response = await strapiClient.query({
+        query: gql`
+          query getPost($id: ID!) {
+            article(id: $id) {
+              id
+              title
+              image{
+                name
+                url
+              }
+              content
+              published_at
             }
-            content
-            published_at
           }
-        }
-      `,
-      variables: {
-        id,
-      },
-    })
-
-    const post = response.data.article
-    commit(SET_POST, post)
+        `,
+        variables: {
+          id,
+        },
+      })
+  
+      post = response.data.article
+      commit(SET_POST, post)
+    }
     commit(SET_LOADING, false)
   }
 }
+
+
