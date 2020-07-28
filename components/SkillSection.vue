@@ -13,7 +13,14 @@
     <div class="skill-categories-wrapper">
       <div class="skill-category">
         <h3>Design</h3>
-        <input class="skill-range" min="1" max="100" value="80" type="range" />
+        <input
+          class="skill-range"
+          min="1"
+          max="100"
+          value="80"
+          type="range"
+          disabled
+        />
         <ul class="tool-list">
           <li>Adobe XD</li>
           <li>Figma</li>
@@ -21,7 +28,14 @@
       </div>
       <div class="skill-category">
         <h3>Frontend</h3>
-        <input class="skill-range" min="1" max="100" value="85" type="range" />
+        <input
+          class="skill-range"
+          min="1"
+          max="100"
+          value="85"
+          type="range"
+          disabled
+        />
         <ul class="tool-list">
           <li>HTML & (S)CSS</li>
           <li>Dart ▹ Flutter</li>
@@ -30,7 +44,14 @@
       </div>
       <div class="skill-category">
         <h3>Backend</h3>
-        <input class="skill-range" min="1" max="100" value="90" type="range" />
+        <input
+          class="skill-range"
+          min="1"
+          max="100"
+          value="90"
+          type="range"
+          disabled
+        />
         <ul class="tool-list">
           <li>Javascript ▹ Node</li>
           <li>Python ▹ Django</li>
