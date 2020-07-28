@@ -18,7 +18,6 @@ export const state = () => ({
   loading: false,
 })
 
-
 export const getters = {
   getPostById: (state) => (id) => {
     return state.posts.find((post) => post.id === id)
@@ -41,8 +40,11 @@ export const mutations = {
 }
 
 export const actions = {
-  async [FETCH_POSTS]({ commit }) {
-    commit(SET_LOADING, true)
+  async [FETCH_POSTS]({ commit, state }) {
+    if(!state.posts.length){
+      commit(SET_LOADING, true)
+    }
+
     const strapiClient = this.app.apolloProvider.clients.otherClient
 
     const response = await strapiClient.query({
@@ -74,7 +76,7 @@ export const actions = {
 
     const strapiClient = this.app.apolloProvider.clients.otherClient
     let post = getters.getPostById(id)
-    
+
     if(post){
       commit(SET_POST, post)
     } else {
