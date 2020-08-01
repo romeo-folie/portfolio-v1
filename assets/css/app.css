@@ -274,6 +274,9 @@ div.content-wrapper {
   height: 2px;
   background: #E3AE52;
 }
+.skill-section .skill-categories-wrapper .skill-category .skill-range:disabled {
+  background: #E3AE52;
+}
 .skill-section .skill-categories-wrapper .skill-category .skill-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #E3AE52;
@@ -281,6 +284,9 @@ div.content-wrapper {
   width: 15px;
   border: none;
   border-radius: 50%;
+}
+.skill-section .skill-categories-wrapper .skill-category .skill-range:disabled::-webkit-slider-thumb {
+  background: #E3AE52;
 }
 .skill-section .skill-categories-wrapper .skill-category h3 {
   color: #E3AE52;

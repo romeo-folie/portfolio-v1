@@ -128,7 +128,7 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'folie_dev',
+      name: 'folie.dev',
       lang: 'en'
     }
   },
