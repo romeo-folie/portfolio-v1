@@ -36,7 +36,12 @@
         where we build custom life changing software solutions.
       </p>
 
-      <a href="#cv-download" class="cv-download-btn">
+      <a
+        href="https://drive.google.com/file/d/11O2a_zAUZZiVgt4aoV_MFU_SmRs4vbpP/view?usp=sharing"
+        target="_blank"
+        class="cv-download-btn"
+        rel="noopener noreferrer"
+      >
         View CV
       </a>
     </div>

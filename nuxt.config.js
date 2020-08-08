@@ -128,7 +128,7 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'folie.dev',
+      name: 'Romeo Nutifafa Folie',
       lang: 'en'
     }
   },
