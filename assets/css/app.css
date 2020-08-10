@@ -1,4 +1,3 @@
-/* paytone-one-regular - latin */
 @font-face {
   font-family: 'Paytone One';
   font-style: normal;
@@ -239,10 +238,6 @@ div.content-wrapper {
 }
 .about-section .about-text .cv-download-btn {
   margin-top: 10px;
-}
-.about-section .about-text .cv-download-btn:hover {
-  background-color: #E3AE52;
-  color: #041721;
 }
 
 .skill-section {
