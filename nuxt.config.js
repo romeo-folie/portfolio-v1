@@ -1,6 +1,3 @@
-import { getBlogPosts } from './queries/blogqueries'
-const { createApolloFetch } = require('apollo-fetch')
-
 export default {
   /*
    ** Nuxt rendering mode
