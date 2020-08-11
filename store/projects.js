@@ -1,5 +1,5 @@
 /* eslint-disable */
-import gql from 'graphql-tag'
+import { getProjects } from '../queries/projectqueries'
 
 // action types
 export const FETCH_PROJECTS = 'fetchProjects'
@@ -22,40 +22,7 @@ export const actions = {
     const client = this.app.apolloProvider.defaultClient
 
     const response = await client.query({
-      query: gql`
-        query getProjects {
-          user(login: "romeo-folie") {
-            repositories(first: 30, privacy: PUBLIC) {
-              nodes {
-                name
-                url
-                stargazers {
-                  totalCount
-                }
-                owner {
-                  login
-                }
-                forks {
-                  totalCount
-                }
-                homepageUrl
-                description
-                repositoryTopics(first: 3) {
-                  nodes {
-                    topic {
-                      name
-                    }
-                  }
-                }
-              }
-              pageInfo {
-                hasNextPage
-                endCursor
-              }
-            }
-          }
-        }
-      `,
+      query: getProjects,
       prefetch: true,
     })
     

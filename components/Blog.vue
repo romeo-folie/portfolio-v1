@@ -2,7 +2,7 @@
   <section class="blog-list-section">
     <h2 v-show="posts.length">Thoughts</h2>
     <div class="blog-post-wrapper">
-      <BlogPost v-for="(post, index) in posts" :key="index" :post="post" />
+      <BlogPost v-for="post in posts" :key="post.id" :post="post" />
     </div>
   </section>
 </template>

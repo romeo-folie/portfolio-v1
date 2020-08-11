@@ -1,5 +1,5 @@
 /* eslint-disable */
-import gql from 'graphql-tag'
+import { getBlogPosts, getPost } from '../queries/blogqueries'
 
 // action types
 const FETCH_POSTS = 'fetchBlogPosts'
@@ -48,20 +48,7 @@ export const actions = {
     const strapiClient = this.app.apolloProvider.clients.otherClient
 
     const response = await strapiClient.query({
-      query: gql`
-        query getBlogPosts {
-          articles (sort: "published_at:DESC") {
-            id
-            title
-            image{
-              name
-              url
-            }
-            content
-            published_at
-          }
-        }
-      `,
+      query: getBlogPosts,
       prefetch: true,
     })
 
@@ -81,23 +68,11 @@ export const actions = {
       commit(SET_POST, post)
     } else {
       const response = await strapiClient.query({
-        query: gql`
-          query getPost($id: ID!) {
-            article(id: $id) {
-              id
-              title
-              image{
-                name
-                url
-              }
-              content
-              published_at
-            }
-          }
-        `,
+        query: getPost,
         variables: {
           id,
         },
+        fetchPolicy: 'cache-and-network',
       })
   
       post = response.data.article

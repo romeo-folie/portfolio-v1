@@ -1,3 +1,5 @@
+import { getBlogPosts } from './queries/blogqueries'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -137,4 +139,17 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  generate: {
+    routes: async () => {
+      // const uri = process.env.STRAPI_URL
+      const strapiClient = this.app.apolloProvider.clients.otherClient
+
+      const response = await strapiClient.query({
+        query: getBlogPosts,
+      })
+
+      const postRoutes = response.data.articles.map(post => `blog/post/${post.id}`);
+      return postRoutes
+    } 
+  },
 }
