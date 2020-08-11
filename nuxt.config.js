@@ -146,19 +146,16 @@ export default {
    */
   build: {},
   generate: {
-    routes: function () {
+    routes(callback) {
       const uri = process.env.STRAPI_URL
       const apolloFetch = createApolloFetch({ uri })
 
       return apolloFetch({ query: getBlogPosts })
-        .then((response) => {
-          return response.data.articles.map((post) => `post/${post.id}`)
+        .then(({ data }) => {
+          const routes = data.articles.map((post) => `/post/${post.id}`)
+          callback(null, routes)
         })
-        .catch((err) => {
-          if (process.env.NODE_ENV === 'development') {
-            console.log(err)
-          }
-        })
+        .catch(callback)
     },
   },
 }
