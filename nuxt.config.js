@@ -1,4 +1,5 @@
 import { getBlogPosts } from './queries/blogqueries'
+const { createApolloFetch } = require('apollo-fetch')
 
 export default {
   /*
@@ -140,11 +141,11 @@ export default {
    */
   build: {},
   generate: {
-    routes: async () => {
-      // const uri = process.env.STRAPI_URL
-      const strapiClient = this.app.apolloProvider.clients.otherClient
+    routes: async function() {
+      const uri = process.env.STRAPI_URL
+      const apolloFetch = createApolloFetch({ uri })
 
-      const response = await strapiClient.query({
+      const response = await apolloFetch({
         query: getBlogPosts,
       })
 
