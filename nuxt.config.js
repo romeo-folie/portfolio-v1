@@ -85,14 +85,19 @@ export default {
         rel: 'preconnect',
         href: 'https://cdn.jsdelivr.net',
         crossorigin: true,
-      }
+      },
     ],
     script: [{ src: '/js/app.js', body: true }],
   },
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/app.css', 'aos/dist/aos.css', '@/assets/css/animate.css', '@/assets/css/spinkit.min.css'],
+  css: [
+    '@/assets/css/app.css',
+    'aos/dist/aos.css',
+    '@/assets/css/animate.css',
+    '@/assets/css/spinkit.min.css',
+  ],
   loading: '@/components/Loading.vue',
   /*
    ** Plugins to load before mounting the App
@@ -132,12 +137,28 @@ export default {
   pwa: {
     manifest: {
       name: 'Romeo Nutifafa Folie',
-      lang: 'en'
-    }
+      lang: 'en',
+    },
   },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  generate: {
+    routes: function () {
+      const uri = process.env.STRAPI_URL
+      const apolloFetch = createApolloFetch({ uri })
+
+      return apolloFetch({ query: getBlogPosts })
+        .then((response) => {
+          return response.data.articles.map((post) => `post/${post.id}`)
+        })
+        .catch((err) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.log(err)
+          }
+        })
+    },
+  },
 }
