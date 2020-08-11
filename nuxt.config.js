@@ -140,17 +140,4 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
-  generate: {
-    routes: async function() {
-      const uri = process.env.STRAPI_URL
-      const apolloFetch = createApolloFetch({ uri })
-
-      const response = await apolloFetch({
-        query: getBlogPosts,
-      })
-
-      const postRoutes = response.data.articles.map(post => `blog/post/${post.id}`);
-      return postRoutes
-    } 
-  },
 }
