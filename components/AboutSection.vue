@@ -15,7 +15,7 @@
         solve problems and bring ideas to life with code.
         <br />
         <br />
-        I spend most of my days building software that runs on the web and
+        I spend most of my time building software that runs on the web and
         mobile. My primary aim is to deliver functional, robust, and
         aesthetically pleasing software to my users.
         <br />
@@ -37,7 +37,7 @@
       </p>
 
       <a
-        href="https://drive.google.com/file/d/1JO0WqZ_RcJnHWHtce7Ws8wDSD7PVWFUU/view?usp=sharing"
+        href="https://drive.google.com/file/d/1bQMO3QKmiaYl69GN9tRsAi6ZDuji36hX/view?usp=sharing"
         target="_blank"
         class="cv-download-btn"
         rel="noopener noreferrer"

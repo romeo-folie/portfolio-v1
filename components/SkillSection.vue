@@ -40,6 +40,7 @@
           <li>HTML & (S)CSS</li>
           <li>Dart ▹ Flutter</li>
           <li>Javascript ▹ Vue</li>
+          <li>Javascript ▹ React</li>
         </ul>
       </div>
       <div class="skill-category">
