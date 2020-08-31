@@ -37,7 +37,7 @@
       </p>
 
       <a
-        href="https://drive.google.com/file/d/1bQMO3QKmiaYl69GN9tRsAi6ZDuji36hX/view?usp=sharing"
+        href="https://drive.google.com/file/d/194lrQqpZQ345GrAqFrS35LRm2Sd414JC/view?usp=sharing"
         target="_blank"
         class="cv-download-btn"
         rel="noopener noreferrer"
