@@ -135,6 +135,7 @@ export default {
     manifest: {
       name: 'Romeo Nutifafa Folie',
       lang: 'en',
+      description: 'Developer Portfolio'
     },
   },
   /*
