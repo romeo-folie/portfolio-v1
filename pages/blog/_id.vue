@@ -16,10 +16,10 @@ export default {
     }),
   },
   mounted() {
-    this.getProject()
+    this.getPost()
   },
   methods: {
-    getProject() {
+    getPost() {
       this.$store.dispatch('blogposts/fetchBlogPost', this.$route.params.id)
     },
   },
