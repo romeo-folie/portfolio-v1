@@ -26,7 +26,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.description || 'Developer Portfolio website',
+        content: process.env.description || 'Developer Portfolio',
       },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#041721' },

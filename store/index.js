@@ -1,3 +1,9 @@
 export const state = () => ({})
 export const mutations = {}
-export const actions = {}
+export const actions = {
+  async nuxtServerInit({ dispatch }, { params }) {
+    if(params.id){
+      await dispatch('blogposts/fetchBlogPost', params.id)
+    }
+  },
+}

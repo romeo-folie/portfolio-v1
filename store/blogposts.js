@@ -72,7 +72,7 @@ export const actions = {
         variables: {
           id,
         },
-        fetchPolicy: 'cache-and-network',
+        // fetchPolicy: 'cache-and-network',
       })
   
       post = response.data.article
