@@ -41,6 +41,7 @@ export default {
         name: 'description',
         content: process.env.description || 'Developer Portfolio',
       },
+      { name: "msapplication-TileImage", content:"/ms-tile-150x150.png"},
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#041721' },
     ],
@@ -63,7 +64,6 @@ export default {
         sizes: '180x180',
         href: '/apple-touch-icon.png',
       },
-      { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       {
         rel: 'preload',
