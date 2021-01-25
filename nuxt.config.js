@@ -3,7 +3,6 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'universal',
   publicRuntimeConfig: {
     strapiBaseUri: process.env.STRAPI_BASE,
     githubApiToken: process.env.GITHUB_API_TOKEN,
