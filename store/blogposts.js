@@ -11,7 +11,6 @@ const SET_POST = 'setBlogPost'
 const SET_LOADING = 'setLoading'
 const CLEAR_POST = 'clearPost'
 
-
 export const state = () => ({
   posts: [],
   post: {},
@@ -36,12 +35,12 @@ export const mutations = {
   },
   [CLEAR_POST]: (state) => {
     state.post = {}
-  }
+  },
 }
 
 export const actions = {
   async [FETCH_POSTS]({ commit, state }) {
-    if(!state.posts.length){
+    if (!state.posts.length) {
       commit(SET_LOADING, true)
     }
 
@@ -64,7 +63,7 @@ export const actions = {
     const strapiClient = this.app.apolloProvider.clients.otherClient
     let post = getters.getPostById(id)
 
-    if(post){
+    if (post) {
       commit(SET_POST, post)
     } else {
       const response = await strapiClient.query({
@@ -74,12 +73,10 @@ export const actions = {
         },
         // fetchPolicy: 'cache-and-network',
       })
-  
+
       post = response.data.article
       commit(SET_POST, post)
     }
     commit(SET_LOADING, false)
-  }
+  },
 }
-
-

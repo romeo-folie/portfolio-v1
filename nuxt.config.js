@@ -1,13 +1,14 @@
-import { getBlogPosts } from './queries/blogqueries'
+import axios from 'axios'
 
 export default {
   generate: {
     routes() {
-      const strapiClient = this.app.apolloProvider.clients.otherClient
-      
-      return strapiClient.query({ query: getBlogPosts , prefetch: true }).then(res => {
-        return res.data.articles.map(post => {
-          return '/blog/' + post.id
+      return axios.get('https://folie-blog.herokuapp.com/articles').then(res => {
+        return res.data.map(post => {
+          return {
+            route: '/blog/' + post.id,
+            payload: post
+          }
         })
       })
     }
