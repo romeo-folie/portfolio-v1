@@ -1,4 +1,17 @@
+import { getBlogPosts } from './queries/blogqueries'
+
 export default {
+  generate: {
+    routes() {
+      const strapiClient = this.app.apolloProvider.clients.otherClient
+      
+      return strapiClient.query({ query: getBlogPosts , prefetch: true }).then(res => {
+        return res.data.articles.map(post => {
+          return '/blog/' + post.id
+        })
+      })
+    }
+  },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
