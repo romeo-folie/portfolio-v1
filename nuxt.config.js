@@ -41,6 +41,7 @@ export default {
         name: 'description',
         content: process.env.description || 'Developer Portfolio',
       },
+      { name: 'keywords', content: 'Romeo, Software Engineer, Nutifafa, Folie, Romeo Nutifafa Folie, Software developer, Web developer,'},
       { name: "msapplication-TileImage", content:"/ms-tile-150x150.png"},
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#041721' },
