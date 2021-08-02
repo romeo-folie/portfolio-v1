@@ -4,7 +4,7 @@ import gql from 'graphql-tag'
 export const getProjects = gql`
   query getProjects {
     user(login: "romeo-folie") {
-      repositories(first: 30, privacy: PUBLIC) {
+      repositories(first: 40, privacy: PUBLIC) {
         nodes {
           name
           url

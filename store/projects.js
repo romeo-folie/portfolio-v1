@@ -18,18 +18,32 @@ export const mutations = {
 }
 
 export const actions = {
-  async [FETCH_PROJECTS] ({ commit }) {
+  async [FETCH_PROJECTS]({ commit }) {
     const client = this.app.apolloProvider.defaultClient
 
     const response = await client.query({
       query: getProjects,
       prefetch: true,
     })
-    
+
     const allRepos = response.data.user.repositories.nodes
-    const allowedRepoTitles = ['Concert-Python', 'GNPC-Scholarship-Monitor', 'InternshipGhana', 'portfolio-v1', 'portfolio-v1-bare-bones']
-    
-    const filteredRepos = allRepos.filter(function(repo) {
+    const allowedRepoTitles = [
+      'url-shortener',
+      'node-react-chat',
+      'formpl-template-search',
+      'clubhouse-clone',
+      'creditlocus-landing-nuxt',
+      'creditlocus-landing-barebones',
+      'byredo-online-store',
+      'Concert-Python',
+      'GNPC-Scholarship-Monitor',
+      'InternshipGhana',
+      'portfolio-v1',
+      'portfolio-v1-bare-bones',
+      'incsub',
+    ]
+
+    const filteredRepos = allRepos.filter(function (repo) {
       return this.indexOf(repo.name) >= 0
     }, allowedRepoTitles)
 

@@ -2,6 +2,14 @@
   <div class="project-card" data-aos="animate__fadeInUp">
     <div class="project-card-content">
       <div class="project-links">
+        <a
+          v-if="repo.homepageUrl"
+          :href="repo.homepageUrl"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img id="link" src="/link.svg" alt="link" />
+        </a>
         <a :href="repo.url" target="_blank" rel="noreferrer noopener"
           ><img src="/github.svg" alt=""
         /></a>

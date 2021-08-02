@@ -11,29 +11,18 @@
         About Me
       </h2>
       <p>
-        Hi my name is Romeo. I'm an Accra based software engineer and I love to
-        solve problems and bring ideas to life with code.
+        Hi my name is Romeo. I'm a Ghana based freelance software engineer who
+        enjoys solving problems and bringing ideas to life with code.
         <br />
         <br />
         I spend most of my time building software that runs on the web and
-        mobile. My primary aim is to deliver functional, robust, and
-        aesthetically pleasing software to my users.
+        mobile with tools like react, vue, and react-native. My primary aim is
+        to deliver performant, robust, and aesthetically pleasing software to my
+        clients and users.
         <br />
         <br />
-        Aside programming, I love to workout, cook, and read. I'm always down
-        for a chat on anything tech and engineering so, feel free to reach out
-        to discuss those or any opportunities you might have for me.
-        <br />
-        <br />
-        I currently work with
-        <a
-          href="https://bewsys.com"
-          class="bewsys-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >bewsys</a
-        >
-        where we build custom life changing software solutions.
+        Aside programming, I love to workout, cook, and read. Feel free to reach
+        out for a chat whenever.
       </p>
 
       <a

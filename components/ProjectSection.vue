@@ -8,6 +8,15 @@
         :repo="project"
       ></ProjectCard>
     </div>
+    <a
+      v-if="allProjects.length > limit"
+      href="javascript:void(0)"
+      class="more-btn"
+      @click="loadMorePosts"
+    >
+      More
+      <img src="/arrow-down.svg" alt="arrow-down" />
+    </a>
   </section>
 </template>
 
@@ -20,10 +29,20 @@ export default {
   components: {
     ProjectCard,
   },
+  data() {
+    return {
+      increment: 3,
+      limit: 6,
+    }
+  },
   computed: {
     ...mapState({
-      projects: (state) => state.projects.projects,
+      allProjects: (state) => state.projects.projects,
     }),
+    projects() {
+      const all = this.allProjects
+      return all.slice(0, this.limit)
+    },
   },
   mounted() {
     this.getProjects()
@@ -31,6 +50,11 @@ export default {
   methods: {
     getProjects() {
       this.$store.dispatch('projects/fetchProjects')
+    },
+    loadMorePosts(e) {
+      e.preventDefault()
+
+      this.limit = this.limit + this.increment
     },
   },
 }
