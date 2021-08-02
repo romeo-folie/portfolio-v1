@@ -47,6 +47,6 @@ export const actions = {
       return this.indexOf(repo.name) >= 0
     }, allowedRepoTitles)
 
-    commit(SET_PROJECTS, filteredRepos)
+    commit(SET_PROJECTS, filteredRepos.reverse())
   },
 }
