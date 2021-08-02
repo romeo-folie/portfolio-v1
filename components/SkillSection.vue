@@ -56,7 +56,7 @@
         />
         <ul class="tool-list">
           <li>Typescript ▹ Node</li>
-          <li>Python ▹ Django</li>
+          <!-- <li>Python ▹ Django</li> -->
           <li>PHP ▹ Laravel</li>
           <li>GraphQL</li>
         </ul>
