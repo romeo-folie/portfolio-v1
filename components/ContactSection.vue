@@ -8,9 +8,9 @@
     <p>
       Have a project in mind?
       <br />
-      I'd be happy to hear from you.
+      If you can imagine it, I can build it.
       <br />
-      Cheers!
+      Let's talk!
     </p>
     <a href="mailto:romeofolie1@gmail.com" class="message-btn">
       Message me
