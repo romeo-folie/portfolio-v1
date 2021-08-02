@@ -21,8 +21,8 @@
         clients and users.
         <br />
         <br />
-        Aside programming, I love music, workouts, and all forms of art. Feel
-        free to reach out for a chat whenever.
+        Aside programming, I love music, workouts, and all forms of art. Reach
+        out for a chat whenever.
       </p>
 
       <a

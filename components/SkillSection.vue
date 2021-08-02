@@ -56,9 +56,25 @@
         />
         <ul class="tool-list">
           <li>Typescript ▹ Node</li>
-          <!-- <li>Python ▹ Django</li> -->
           <li>PHP ▹ Laravel</li>
           <li>GraphQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3>Infrastructure</h3>
+        <input
+          class="skill-range"
+          min="1"
+          max="100"
+          value="90"
+          type="range"
+          disabled
+        />
+        <ul class="tool-list">
+          <li>Heroku</li>
+          <li>Docker</li>
+          <li>GCP</li>
         </ul>
       </div>
     </div>
