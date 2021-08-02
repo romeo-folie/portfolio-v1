@@ -39,8 +39,9 @@
         <ul class="tool-list">
           <li>HTML & (S)CSS</li>
           <li>Dart ▹ Flutter</li>
-          <li>Javascript ▹ Vue</li>
-          <li>Javascript ▹ React</li>
+          <li>Typescript ▹ Vue</li>
+          <li>Typescript ▹ React</li>
+          <li>Typescript ▹ React Native</li>
         </ul>
       </div>
       <div class="skill-category">
@@ -54,7 +55,7 @@
           disabled
         />
         <ul class="tool-list">
-          <li>Javascript ▹ Node</li>
+          <li>Typescript ▹ Node</li>
           <li>Python ▹ Django</li>
           <li>PHP ▹ Laravel</li>
           <li>GraphQL</li>
