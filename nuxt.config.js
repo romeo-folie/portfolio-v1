@@ -3,15 +3,17 @@ import axios from 'axios'
 export default {
   generate: {
     routes() {
-      return axios.get('https://folie-blog.herokuapp.com/articles').then(res => {
-        return res.data.map(post => {
-          return {
-            route: '/blog/' + post.id,
-            payload: post
-          }
+      return axios
+        .get('https://folie-blog.herokuapp.com/articles')
+        .then((res) => {
+          return res.data.map((post) => {
+            return {
+              route: '/blog/' + post.id,
+              payload: post,
+            }
+          })
         })
-      })
-    }
+    },
   },
   /*
    ** Nuxt rendering mode
@@ -41,8 +43,12 @@ export default {
         name: 'description',
         content: process.env.description || 'Developer Portfolio',
       },
-      { name: 'keywords', content: 'Romeo, Software Engineer, Nutifafa, Folie, Romeo Nutifafa Folie, Software developer, Web developer,'},
-      { name: "msapplication-TileImage", content:"/ms-tile-150x150.png"},
+      {
+        name: 'keywords',
+        content:
+          'Romeo, Software Engineer, Nutifafa, Folie, Romeo Nutifafa Folie, Software developer, Web developer,',
+      },
+      { name: 'msapplication-TileImage', content: '/ms-tile-150x150.png' },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { name: 'theme-color', content: '#041721' },
     ],
@@ -149,7 +155,7 @@ export default {
     manifest: {
       name: 'Romeo Nutifafa Folie',
       lang: 'en',
-      description: 'Developer Portfolio'
+      description: 'Developer Portfolio',
     },
   },
   /*
