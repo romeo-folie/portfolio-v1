@@ -27,25 +27,23 @@
         <li>
           <a
             target="_blank"
+            href="https://vsco.co/nutifafa-folie"
+            rel="noreferrer noopener"
+          >
+            <img src="/vsco.svg" alt="vsco_icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
             href="https://instagram.com/romeo__nf"
             rel="noreferrer noopener"
           >
             <img src="/instagram.svg" alt="instagram_icon" />
           </a>
         </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://twitter.com/rxnf_"
-            rel="noreferrer noopener"
-          >
-            <img src="/twitter.svg" alt="twitter_icon" />
-          </a>
-        </li>
       </ul>
-      <h3>
-        &#169; Romeo Nutifafa Folie - 2020
-      </h3>
+      <h3>&#169; Romeo Nutifafa Folie - 2020</h3>
     </div>
   </footer>
 </template>

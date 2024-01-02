@@ -12,9 +12,7 @@
       <br />
       Let's talk!
     </p>
-    <a href="mailto:romeofolie1@gmail.com" class="message-btn">
-      Message me
-    </a>
+    <a href="mailto:romeofolie1@gmail.com" class="message-btn"> Message me </a>
   </section>
 </template>
 

@@ -4,9 +4,7 @@
       class="brand"
       data-aos="animate__fadeInDown animate__delay-1s animate__slower"
     >
-      <a href="/">
-        {rnf}
-      </a>
+      <a href="/"> {rnf} </a>
     </div>
 
     <ul

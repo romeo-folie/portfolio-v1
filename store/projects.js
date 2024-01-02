@@ -26,6 +26,8 @@ export const actions = {
       prefetch: true,
     })
 
+    console.log('RESPONSE ', response);
+
     const allRepos = response.data.user.repositories.nodes
     const allowedRepoTitles = [
       'url-shortener',

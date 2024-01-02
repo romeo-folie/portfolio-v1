@@ -7,9 +7,7 @@
     data-aos-mirror="true"
   >
     <div class="about-text">
-      <h2>
-        About Me
-      </h2>
+      <h2>About Me</h2>
       <p>
         Hi my name is Romeo. I'm a Ghana based freelance software engineer who
         enjoys solving problems and bringing ideas to life with code.
