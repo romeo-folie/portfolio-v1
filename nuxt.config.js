@@ -1,20 +1,20 @@
 import axios from 'axios'
 
 export default {
-  generate: {
-    routes() {
-      return axios
-        .get('https://folie-blog.herokuapp.com/articles')
-        .then((res) => {
-          return res.data.map((post) => {
-            return {
-              route: '/blog/' + post.id,
-              payload: post,
-            }
-          })
-        })
-    },
-  },
+  // generate: {
+  //   routes() {
+  //     return axios
+  //       .get('https://folie-blog.herokuapp.com/articles')
+  //       .then((res) => {
+  //         return res.data.map((post) => {
+  //           return {
+  //             route: '/blog/' + post.id,
+  //             payload: post,
+  //           }
+  //         })
+  //       })
+  //   },
+  // },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
