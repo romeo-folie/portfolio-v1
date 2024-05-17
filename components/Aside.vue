@@ -57,19 +57,19 @@
         <li>
           <a
             target="_blank"
-            href="https://instagram.com/romeo__nf"
+            href="https://vsco.co/nutifafa-folie"
             rel="noreferrer noopener"
           >
-            <img src="/instagram.svg" alt="instagram_icon" />
+            <img src="/vsco.svg" alt="vsco_icon" />
           </a>
         </li>
         <li>
           <a
             target="_blank"
-            href="https://twitter.com/rxnf_"
+            href="https://instagram.com/romeo__nf"
             rel="noreferrer noopener"
           >
-            <img src="/twitter.svg" alt="twitter_icon" />
+            <img src="/instagram.svg" alt="instagram_icon" />
           </a>
         </li>
       </ul>
