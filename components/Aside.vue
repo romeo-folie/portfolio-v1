@@ -27,11 +27,11 @@
               >Contacts</a
             >
           </li>
-          <li>
+          <!-- <li>
             <nuxt-link class="nav-link" to="/blog" onclick="hideSideNav()"
               >Blog</nuxt-link
             >
-          </li>
+          </li> -->
         </ul>
       </nav>
 
