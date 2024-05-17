@@ -15,7 +15,7 @@
       <li><nuxt-link class="nav-link" to="/#skills">Skills</nuxt-link></li>
       <li><nuxt-link class="nav-link" to="/#projects">Work</nuxt-link></li>
       <li><nuxt-link class="nav-link" to="/#contact">Contact</nuxt-link></li>
-      <li><nuxt-link class="nav-link" to="/blog">Blog</nuxt-link></li>
+      <!-- <li><nuxt-link class="nav-link" to="/blog">Blog</nuxt-link></li> -->
     </ul>
 
     <div
