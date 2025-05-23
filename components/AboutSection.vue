@@ -24,7 +24,7 @@
       </p>
 
       <a
-        href="https://drive.google.com/file/d/1sEN7DQl8mobyvWCd1C9d8L7-LaZw9HVb/view?usp=sharing"
+        href="https://drive.google.com/file/d/13R4Uqd_n6xBiUkFx8mk6VPiuqv6XOqgA/view?usp=sharing"
         target="_blank"
         class="cv-download-btn"
         rel="noopener noreferrer"
